@@ -1,0 +1,242 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+
+
+.game-pad{
+display: none;
+justify-content: center;
+align-items: center;
+height: 80vh;
+flex-direction: column;
+}
+.btns{
+  
+    display: grid;
+
+padding: 30px;
+border-radius:30px ;
+grid-template-columns:repeat(3,100px);
+grid-template-rows: repeat(3,100px);
+
+    }
+    .btns button{
+  
+      background: rgb(31, 31, 31);
+        margin:3px;
+    border: 2px solid white;
+        }
+        .btns button:hover{
+  
+          cursor: pointer;
+              }
+        body{
+            background: rgb(12, 12, 12);
+
+        }
+        .xmark{
+            font-size: 3em;
+            color: white;
+        }
+        .choose{ 
+           
+            display: flex;
+           justify-content: center;
+         background: white;
+         flex-direction: column;
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;
+        }
+        .a{ 
+             
+            display: flex;
+           justify-content: center;
+           margin-top: 100px;
+           
+      
+        }
+        .buttons {
+        display: flex;
+   justify-content: center;         
+   margin: 20px;
+        }
+        .buttons div{
+          color: white;
+          background-color: rgb(31, 31, 31);    
+       margin: 20px;
+       padding: 20px;
+       border-radius: 10px;
+       font-size: 1.5em;
+       margin-bottom: 0;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       transition: .3s;
+            }
+            .choose-head{
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            .buttons div:hover{
+                cursor: pointer;
+                opacity: .8;
+            }
+            h1:hover{
+                cursor: default;
+            }
+            .game-pad.active{
+                display: flex;
+            }
+            .a.hide{
+                display: none;
+            }
+            .recent{
+                display: flex;
+                margin-bottom: -10px;
+                
+            }
+           .xturn{
+               margin-right:10px ;
+               background: white;
+               padding: 20px;
+               width: 95px;
+               text-align: center;
+               border-radius: 10px;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               font-weight: bold;
+               font-size: 1.5em;
+ 
+border: 1px solid white;
+           }
+           .oturn{
+            margin-left:10px ;
+            background: white;
+            padding: 20px;
+            width: 95px;
+            text-align: center;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.5em;
+            border: 1px solid white;
+        }
+
+        .xturn.active{
+background-color:rgb(31, 31, 31) ;
+color: white;
+        }
+        .oturn.active{
+            background-color:rgb(31, 31, 31) ;
+color: white;
+        }
+        .winner{
+background-color: white;
+width: 650px;
+height: 350px;
+display: none;
+
+
+margin-top: 200px;
+border-radius: 20px;
+        }
+        .winner p{
+            font-size: 3em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 50px;
+        }
+        .winner.active{
+            display: block;
+        }
+        .tryagain{
+          
+            padding: 20px;
+        
+            text-align: center;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+background-color:rgb(31, 31, 31) ;
+border: 1px solid white;
+color: white;
+width: 180px;
+margin-top: 80px;
+margin-left: 30px;
+transition: .3s;
+        }
+        .choosegamemode{
+        
+            padding: 20px;
+        width: 180px;
+      
+            text-align: center;
+            border-radius: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            background-color:rgb(31, 31, 31) ;
+            border: 1px solid white;
+            color: white;
+            margin-right: 30px;
+            transition: .3s;
+            margin-top: 80px;
+        }
+        .b{
+            display: flex;
+            justify-content: space-around;
+        }
+        .winner Button:hover{
+            cursor: pointer;
+            opacity: .8;
+        }
+        .return {
+            display: none;
+            justify-content: center;
+           margin-top: -100px;
+        }
+        .return div {
+          text-align: center;
+          padding: 20px;
+          width: 250px;
+         
+              text-align: center;
+              border-radius: 10px;
+              font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+              font-weight: bold;
+              font-size: 1.2em;
+              background-color:rgb(31, 31, 31) ;
+              border: 1px solid white;
+              color: white;
+        
+              transition: .3s;
+        }
+        .return div:hover {
+            cursor: pointer;
+            opacity: .6;
+          }
+          .return.active{
+              display: flex;
+          }
+          .winner-board{
+              display: flex;
+              justify-content: center;
+          }
+          .main-head{
+             display: flex;
+             justify-content: center;
+             margin-top: 100px;
+        
+          }
+          .main-head h1{
+             color: white;
+             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        font-size:4em;
+        }
+        .main-head.hide
+        {
+            display: none;
+        }
